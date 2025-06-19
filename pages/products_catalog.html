@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products Catalog - Premium Incense Raw Materials | Incense Portfolio</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Browse our comprehensive catalog of premium incense raw materials including raw incense sticks, dhoop sticks, and dhoop cones. Wholesale pricing for B2B buyers." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fincensepo8853back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-surface shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="../assets/images/Aromya-1750354527295.png" alt="AROMYA Logo" class="w-10 h-10 object-contain" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                    <div class="hidden items-center justify-center w-10 h-10 bg-primary text-white rounded" style="display: none;">
+                        <span class="text-lg font-bold">A</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-serif font-bold text-primary">AROMYA</h1>
+                        <p class="text-xs text-text-secondary">Premium Raw Materials</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth">Home</a>
+                    <a href="products_catalog.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Products</a>
+                    <a href="oem_packaging_services.html" class="text-text-secondary hover:text-primary transition-smooth">OEM Packaging</a>
+                    <a href="contact_us.html" class="text-text-secondary hover:text-primary transition-smooth">Contact Us</a>
+                </div>
+
+                <!-- Currency/Language Selector -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <select class="text-sm border border-primary border-opacity-20 rounded px-2 py-1 bg-background">
+                        <option>USD ($)</option>
+                        <option>INR (₹)</option>
+                        <option>EUR (€)</option>
+                    </select>
+                    <select class="text-sm border border-primary border-opacity-20 rounded px-2 py-1 bg-background">
+                        <option>EN</option>
+                        <option>HI</option>
+                    </select>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden mt-4 pb-4 border-t border-primary border-opacity-20 hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="homepage.html" class="text-text-secondary">Home</a>
+                    <a href="products_catalog.html" class="text-primary font-semibold">Products</a>
+                    <a href="oem_packaging_services.html" class="text-text-secondary">OEM Packaging</a>
+                    <a href="contact_us.html" class="text-text-secondary">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <section class="bg-surface py-4 px-6 border-b border-primary border-opacity-10">
+        <div class="max-w-7xl mx-auto">
+            <nav class="flex items-center space-x-2 text-sm">
+                <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth">Home</a>
+                <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                <span class="text-primary font-semibold">Products</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section class="py-12 px-6 bg-background">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">Products Catalog</h1>
+            <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                Discover our comprehensive range of premium raw incense materials, carefully sourced and processed to meet the highest quality standards for wholesale buyers and manufacturers worldwide.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section class="py-8 px-6 bg-background">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Sidebar Filter Panel (3 columns) -->
+                <aside class="lg:col-span-3">
+                    <div class="card p-6 sticky top-24">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-serif font-semibold text-primary">Filters</h3>
+                            <button id="reset-filters" class="text-sm text-accent hover:text-accent-600 transition-smooth">Reset</button>
+                        </div>
+
+                        <!-- Category Selection -->
+                        <div class="mb-8">
+                            <h4 class="font-semibold text-primary mb-4">Categories</h4>
+                            <div class="space-y-3">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" class="category-filter" value="all" checked />
+                                    <span class="text-text-secondary">All Products</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" class="category-filter" value="incense-sticks" />
+                                    <span class="text-text-secondary">Raw Incense Sticks</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" class="category-filter" value="dhoop-sticks" />
+                                    <span class="text-text-secondary">Raw Dhoop Sticks</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" class="category-filter" value="dhoop-cones" />
+                                    <span class="text-text-secondary">Raw Dhoop Cones</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Price Range -->
+                        <div class="mb-8">
+                            <h4 class="font-semibold text-primary mb-4">Price Range (USD)</h4>
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-4">
+                                    <input type="number" placeholder="Min" class="input-field text-sm w-20" id="price-min" />
+                                    <span class="text-text-secondary">-</span>
+                                    <input type="number" placeholder="Max" class="input-field text-sm w-20" id="price-max" />
+                                </div>
+                                <input type="range" min="0" max="1000" value="500" class="w-full accent-primary" id="price-range" />
+                                <div class="flex justify-between text-xs text-text-secondary">
+                                    <span>$0</span>
+                                    <span>$1000+</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Material Type -->
+                        <div class="mb-8">
+                            <h4 class="font-semibold text-primary mb-4">Material Type</h4>
+                            <div class="space-y-3">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" class="material-filter" value="sandalwood" />
+                                    <span class="text-text-secondary">Sandalwood</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" class="material-filter" value="jasmine" />
+                                    <span class="text-text-secondary">Jasmine</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" class="material-filter" value="rose" />
+                                    <span class="text-text-secondary">Rose</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" class="material-filter" value="lavender" />
+                                    <span class="text-text-secondary">Lavender</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" class="material-filter" value="patchouli" />
+                                    <span class="text-text-secondary">Patchouli</span>
+                                </label>
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" class="material-filter" value="nag-champa" />
+                                    <span class="text-text-secondary">Nag Champa</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Apply Filters Button -->
+                        <button class="btn-primary w-full">Apply Filters</button>
+                    </div>
+                </aside>
+
+                <!-- Main Content Area (9 columns) -->
+                <main class="lg:col-span-9">
+                    <!-- Category Tabs -->
+                    <div class="mb-8">
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <button class="category-tab active px-6 py-3 rounded-lg bg-primary text-white font-semibold transition-smooth" data-category="all">
+                                All Products
+                            </button>
+                            <button class="category-tab px-6 py-3 rounded-lg bg-surface text-text-secondary hover:bg-primary hover:text-white transition-smooth" data-category="incense-sticks">
+                                Raw Incense Sticks
+                            </button>
+                            <button class="category-tab px-6 py-3 rounded-lg bg-surface text-text-secondary hover:bg-primary hover:text-white transition-smooth" data-category="dhoop-sticks">
+                                Raw Dhoop Sticks
+                            </button>
+                            <button class="category-tab px-6 py-3 rounded-lg bg-surface text-text-secondary hover:bg-primary hover:text-white transition-smooth" data-category="dhoop-cones">
+                                Raw Dhoop Cones
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Results Counter and Sort -->
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
+                        <div class="flex items-center space-x-4">
+                            <span class="text-text-secondary" id="results-counter">Showing 24 products</span>
+                            <button class="lg:hidden btn-secondary text-sm" id="mobile-filter-btn">
+                                <svg class="w-4 h-4 inline mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+                                </svg>
+                                Filters
+                            </button>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <label class="text-sm text-text-secondary">Sort by:</label>
+                            <select class="text-sm border border-primary border-opacity-20 rounded px-3 py-2 bg-background" id="sort-dropdown">
+                                <option value="alphabetical">Alphabetical</option>
+                                <option value="newest">Newest First</option>
+                                <option value="category">Category</option>
+                                <option value="price-low">Price: Low to High</option>
+                                <option value="price-high">Price: High to Low</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Products Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="products-grid">
+                        <!-- Raw Incense Sticks Products -->
+                        <div class="product-card card group hover:scale-105 transition-all duration-300" data-category="incense-sticks" data-material="sandalwood" data-price="45">
+                            <div class="relative overflow-hidden rounded-t-lg">
+                                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=800&auto=format&fit=crop" alt="Premium Sandalwood Incense Sticks" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/6186810/pexels-photo-6186810.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                                <div class="absolute top-3 right-3 bg-accent text-white text-xs px-2 py-1 rounded">Premium</div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-serif font-semibold text-primary mb-2">Premium Sandalwood Incense Sticks</h3>
+                                <p class="text-sm text-text-secondary mb-3">Authentic sandalwood fragrance with long-lasting burn time. Perfect for meditation and spiritual practices.</p>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-lg font-semibold text-accent">$45/kg</span>
+                                    <span class="text-xs text-text-secondary">Min: 10kg</span>
+                                </div>
+                                <button class="btn-primary w-full inquiry-btn" data-product="Premium Sandalwood Incense Sticks">Send Inquiry</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card card group hover:scale-105 transition-all duration-300" data-category="incense-sticks" data-material="jasmine" data-price="38">
+                            <div class="relative overflow-hidden rounded-t-lg">
+                                <img src="https://images.pixabay.com/photo-2019/11/07/20/48/incense-4609925_1280.jpg" alt="Jasmine Incense Sticks" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-serif font-semibold text-primary mb-2">Jasmine Incense Sticks</h3>
+                                <p class="text-sm text-text-secondary mb-3">Delicate jasmine fragrance with floral notes. Ideal for relaxation and aromatherapy applications.</p>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-lg font-semibold text-accent">$38/kg</span>
+                                    <span class="text-xs text-text-secondary">Min: 15kg</span>
+                                </div>
+                                <button class="btn-primary w-full inquiry-btn" data-product="Jasmine Incense Sticks">Send Inquiry</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card card group hover:scale-105 transition-all duration-300" data-category="incense-sticks" data-material="rose" data-price="42">
+                            <div class="relative overflow-hidden rounded-t-lg">
+                                <img src="https://images.pexels.com/photos/6186810/pexels-photo-6186810.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Rose Incense Sticks" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo-2019/11/07/20/48/incense-4609925_1280.jpg'; this.onerror=null;" />
+                                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-serif font-semibold text-primary mb-2">Rose Incense Sticks</h3>
+                                <p class="text-sm text-text-secondary mb-3">Classic rose fragrance with romantic appeal. Popular choice for special occasions and ceremonies.</p>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-lg font-semibold text-accent">$42/kg</span>
+                                    <span class="text-xs text-text-secondary">Min: 12kg</span>
+                                </div>
+                                <button class="btn-primary w-full inquiry-btn" data-product="Rose Incense Sticks">Send Inquiry</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card card group hover:scale-105 transition-all duration-300" data-category="incense-sticks" data-material="lavender" data-price="40">
+                            <div class="relative overflow-hidden rounded-t-lg">
+                                <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=800&auto=format&fit=crop" alt="Lavender Incense Sticks" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/6186810/pexels-photo-6186810.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-serif font-semibold text-primary mb-2">Lavender Incense Sticks</h3>
+                                <p class="text-sm text-text-secondary mb-3">Calming lavender scent known for stress relief. Perfect for bedtime routines and relaxation.</p>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-lg font-semibold text-accent">$40/kg</span>
+                                    <span class="text-xs text-text-secondary">Min: 10kg</span>
+                                </div>
+                                <button class="btn-primary w-full inquiry-btn" data-product="Lavender Incense Sticks">Send Inquiry</button>
+                            </div>
+                        </div>
+
+                        <!-- Raw Dhoop Sticks Products -->
+                        <div class="product-card card group hover:scale-105 transition-all duration-300" data-category="dhoop-sticks" data-material="sandalwood" data-price="52">
+                            <div class="relative overflow-hidden rounded-t-lg">
+                                <img src="https://images.pixabay.com/photo-2020/05/18/16/17/social-media-5187243_1280.png" alt="Traditional Sandalwood Dhoop Sticks" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                                <div class="absolute top-3 right-3 bg-accent text-white text-xs px-2 py-1 rounded">Traditional</div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-serif font-semibold text-primary mb-2">Traditional Sandalwood Dhoop Sticks</h3>
+                                <p class="text-sm text-text-secondary mb-3">Authentic dhoop sticks made from pure sandalwood powder. Traditional recipe for spiritual ceremonies.</p>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-lg font-semibold text-accent">$52/kg</span>
+                                    <span class="text-xs text-text-secondary">Min: 8kg</span>
+                                </div>
+                                <button class="btn-primary w-full inquiry-btn" data-product="Traditional Sandalwood Dhoop Sticks">Send Inquiry</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card card group hover:scale-105 transition-all duration-300" data-category="dhoop-sticks" data-material="patchouli" data-price="48">
+                            <div class="relative overflow-hidden rounded-t-lg">
+                                <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=800&auto=format&fit=crop" alt="Patchouli Dhoop Sticks" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo-2020/05/18/16/17/social-media-5187243_1280.png'; this.onerror=null;" />
+                                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-serif font-semibold text-primary mb-2">Patchouli Dhoop Sticks</h3>
+                                <p class="text-sm text-text-secondary mb-3">Earthy patchouli fragrance with grounding properties. Popular for meditation and yoga practices.</p>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-lg font-semibold text-accent">$48/kg</span>
+                                    <span class="text-xs text-text-secondary">Min: 10kg</span>
+                                </div>
+                                <button class="btn-primary w-full inquiry-btn" data-product="Patchouli Dhoop Sticks">Send Inquiry</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card card group hover:scale-105 transition-all duration-300" data-category="dhoop-sticks" data-material="nag-champa" data-price="55">
+                            <div class="relative overflow-hidden rounded-t-lg">
+                                <img src="https://images.pexels.com/photos/7262800/pexels-photo-7262800.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Nag Champa Dhoop Sticks" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1586953208448-b95a79798f07?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                                <div class="absolute top-3 right-3 bg-accent text-white text-xs px-2 py-1 rounded">Popular</div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-serif font-semibold text-primary mb-2">Nag Champa Dhoop Sticks</h3>
+                                <p class="text-sm text-text-secondary mb-3">Classic Nag Champa blend with mystical fragrance. Most popular choice for spiritual practices worldwide.</p>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-lg font-semibold text-accent">$55/kg</span>
+                                    <span class="text-xs text-text-secondary">Min: 5kg</span>
+                                </div>
+                                <button class="btn-primary w-full inquiry-btn" data-product="Nag Champa Dhoop Sticks">Send Inquiry</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card card group hover:scale-105 transition-all duration-300" data-category="dhoop-sticks" data-material="jasmine" data-price="46">
+                            <div class="relative overflow-hidden rounded-t-lg">
+                                <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800&auto=format&fit=crop" alt="Jasmine Dhoop Sticks" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/7262800/pexels-photo-7262800.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-serif font-semibold text-primary mb-2">Jasmine Dhoop Sticks</h3>
+                                <p class="text-sm text-text-secondary mb-3">Floral jasmine dhoop with intense fragrance. Ideal for evening prayers and romantic ambiance.</p>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-lg font-semibold text-accent">$46/kg</span>
+                                    <span class="text-xs text-text-secondary">Min: 12kg</span>
+                                </div>
+                                <button class="btn-primary w-full inquiry-btn" data-product="Jasmine Dhoop Sticks">Send Inquiry</button>
+                            </div>
+                        </div>
+
+                        <!-- Raw Dhoop Cones Products -->
+                        <div class="product-card card group hover:scale-105 transition-all duration-300" data-category="dhoop-cones" data-material="sandalwood" data-price="65">
+                            <div class="relative overflow-hidden rounded-t-lg">
+                                <img src="https://images.pixabay.com/photo-2019/11/07/20/48/incense-4609925_1280.jpg" alt="Premium Sandalwood Dhoop Cones" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                                <div class="absolute top-3 right-3 bg-accent text-white text-xs px-2 py-1 rounded">Premium</div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-serif font-semibold text-primary mb-2">Premium Sandalwood Dhoop Cones</h3>
+                                <p class="text-sm text-text-secondary mb-3">Handcrafted sandalwood cones with concentrated fragrance. Perfect for meditation and spiritual practices.</p>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-lg font-semibold text-accent">$65/kg</span>
+                                    <span class="text-xs text-text-secondary">Min: 5kg</span>
+                                </div>
+                                <button class="btn-primary w-full inquiry-btn" data-product="Premium Sandalwood Dhoop Cones">Send Inquiry</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card card group hover:scale-105 transition-all duration-300" data-category="dhoop-cones" data-material="rose" data-price="58">
+                            <div class="relative overflow-hidden rounded-t-lg">
+                                <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=800&auto=format&fit=crop" alt="Rose Dhoop Cones" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo-2019/11/07/20/48/incense-4609925_1280.jpg'; this.onerror=null;" />
+                                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-serif font-semibold text-primary mb-2">Rose Dhoop Cones</h3>
+                                <p class="text-sm text-text-secondary mb-3">Romantic rose fragrance in cone form. Ideal for special occasions and intimate settings.</p>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-lg font-semibold text-accent">$58/kg</span>
+                                    <span class="text-xs text-text-secondary">Min: 8kg</span>
+                                </div>
+                                <button class="btn-primary w-full inquiry-btn" data-product="Rose Dhoop Cones">Send Inquiry</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card card group hover:scale-105 transition-all duration-300" data-category="dhoop-cones" data-material="lavender" data-price="60">
+                            <div class="relative overflow-hidden rounded-t-lg">
+                                <img src="https://images.pexels.com/photos/6186810/pexels-photo-6186810.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Lavender Dhoop Cones" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-serif font-semibold text-primary mb-2">Lavender Dhoop Cones</h3>
+                                <p class="text-sm text-text-secondary mb-3">Soothing lavender cones for relaxation. Perfect for stress relief and peaceful environments.</p>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-lg font-semibold text-accent">$60/kg</span>
+                                    <span class="text-xs text-text-secondary">Min: 6kg</span>
+                                </div>
+                                <button class="btn-primary w-full inquiry-btn" data-product="Lavender Dhoop Cones">Send Inquiry</button>
+                            </div>
+                        </div>
+
+                        <div class="product-card card group hover:scale-105 transition-all duration-300" data-category="dhoop-cones" data-material="patchouli" data-price="62">
+                            <div class="relative overflow-hidden rounded-t-lg">
+                                <img src="https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=800&auto=format&fit=crop" alt="Patchouli Dhoop Cones" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/6186810/pexels-photo-6186810.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                                <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                            </div>
+                            <div class="p-4">
+                                <h3 class="font-serif font-semibold text-primary mb-2">Patchouli Dhoop Cones</h3>
+                                <p class="text-sm text-text-secondary mb-3">Earthy patchouli cones with grounding properties. Excellent for yoga and meditation sessions.</p>
+                                <div class="flex items-center justify-between mb-4">
+                                    <span class="text-lg font-semibold text-accent">$62/kg</span>
+                                    <span class="text-xs text-text-secondary">Min: 7kg</span>
+                                </div>
+                                <button class="btn-primary w-full inquiry-btn" data-product="Patchouli Dhoop Cones">Send Inquiry</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Load More Button -->
+                    <div class="text-center mt-12">
+                        <button class="btn-secondary px-8 py-3">Load More Products</button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Modal -->
+    <div id="inquiry-modal" class="fixed inset-0 bg-primary bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-background rounded-lg max-w-md w-full p-6 animate-fade-in">
+            <div class="flex items-center justify-between mb-6">
+                <h3 class="text-xl font-serif font-semibold text-primary">Product Inquiry</h3>
+                <button id="close-modal" class="text-text-secondary hover:text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <form id="inquiry-form">
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold text-primary mb-2">Product</label>
+                    <input type="text" id="inquiry-product" class="input-field" readonly />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold text-primary mb-2">Your Name *</label>
+                    <input type="text" class="input-field" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold text-primary mb-2">Email Address *</label>
+                    <input type="email" class="input-field" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold text-primary mb-2">Company Name</label>
+                    <input type="text" class="input-field" />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-semibold text-primary mb-2">Quantity Required (kg)</label>
+                    <input type="number" class="input-field" min="1" />
+                </div>
+                <div class="mb-6">
+                    <label class="block text-sm font-semibold text-primary mb-2">Message</label>
+                    <textarea class="input-field h-24 resize-none" placeholder="Please provide details about your requirements..."></textarea>
+                </div>
+                <div class="flex space-x-4">
+                    <button type="button" id="cancel-inquiry" class="btn-secondary flex-1">Cancel</button>
+                    <button type="submit" class="btn-primary flex-1">Send Inquiry</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Mobile Filter Sidebar -->
+    <div id="mobile-filter-sidebar" class="fixed inset-y-0 left-0 w-80 bg-background shadow-lg z-50 transform -translate-x-full transition-transform duration-300 lg:hidden">
+        <div class="p-6 h-full overflow-y-auto">
+            <div class="flex items-center justify-between mb-6">
+                <h3 class="text-xl font-serif font-semibold text-primary">Filters</h3>
+                <button id="close-mobile-filter" class="text-text-secondary hover:text-primary">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile filter content (same as desktop) -->
+            <div class="space-y-8">
+                <!-- Categories -->
+                <div>
+                    <h4 class="font-semibold text-primary mb-4">Categories</h4>
+                    <div class="space-y-3">
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" class="mobile-category-filter" value="all" checked />
+                            <span class="text-text-secondary">All Products</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" class="mobile-category-filter" value="incense-sticks" />
+                            <span class="text-text-secondary">Raw Incense Sticks</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" class="mobile-category-filter" value="dhoop-sticks" />
+                            <span class="text-text-secondary">Raw Dhoop Sticks</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" class="mobile-category-filter" value="dhoop-cones" />
+                            <span class="text-text-secondary">Raw Dhoop Cones</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Price Range -->
+                <div>
+                    <h4 class="font-semibold text-primary mb-4">Price Range (USD)</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <input type="number" placeholder="Min" class="input-field text-sm w-20" />
+                            <span class="text-text-secondary">-</span>
+                            <input type="number" placeholder="Max" class="input-field text-sm w-20" />
+                        </div>
+                        <input type="range" min="0" max="1000" value="500" class="w-full accent-primary" />
+                        <div class="flex justify-between text-xs text-text-secondary">
+                            <span>$0</span>
+                            <span>$1000+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Material Type -->
+                <div>
+                    <h4 class="font-semibold text-primary mb-4">Material Type</h4>
+                    <div class="space-y-3">
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" class="mobile-material-filter" value="sandalwood" />
+                            <span class="text-text-secondary">Sandalwood</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" class="mobile-material-filter" value="jasmine" />
+                            <span class="text-text-secondary">Jasmine</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" class="mobile-material-filter" value="rose" />
+                            <span class="text-text-secondary">Rose</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" class="mobile-material-filter" value="lavender" />
+                            <span class="text-text-secondary">Lavender</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" class="mobile-material-filter" value="patchouli" />
+                            <span class="text-text-secondary">Patchouli</span>
+                        </label>
+                        <label class="flex items-center space-x-3 cursor-pointer">
+                            <input type="checkbox" class="mobile-material-filter" value="nag-champa" />
+                            <span class="text-text-secondary">Nag Champa</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button class="btn-primary w-full">Apply Filters</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Filter Overlay -->
+    <div id="mobile-filter-overlay" class="fixed inset-0 bg-primary bg-opacity-50 z-40 hidden lg:hidden"></div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="../assets/images/Aromya-1750354527295.png" alt="AROMYA Logo" class="w-8 h-8 object-contain" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                        <div class="hidden items-center justify-center w-8 h-8 bg-accent text-white rounded" style="display: none;">
+                            <span class="text-sm font-bold">A</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-serif font-bold">AROMYA</h3>
+                            <p class="text-sm text-white text-opacity-80">Premium Raw Materials</p>
+                        </div>
+                    </div>
+                    <p class="text-white text-opacity-80 leading-relaxed">
+                        Leading supplier of premium incense raw materials serving wholesale buyers and manufacturers worldwide with quality and reliability.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="homepage.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">Home</a></li>
+                        <li><a href="products_catalog.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">Products</a></li>
+                        <li><a href="oem_packaging_services.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">OEM Services</a></li>
+                        <li><a href="contact_us.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Our Products</h4>
+                    <ul class="space-y-3">
+                        <li><a href="product_category_detail.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">Raw Incense Sticks</a></li>
+                        <li><a href="product_category_detail.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">Raw Dhoop Sticks</a></li>
+                        <li><a href="product_category_detail.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">Raw Dhoop Cones</a></li>
+                        <li><a href="oem_packaging_services.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">Custom Packaging</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Information</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <div>
+                                <p class="text-white text-opacity-80">info@incenseportfolio.com</p>
+                                <p class="text-white text-opacity-80">sales@incenseportfolio.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            <div>
+                                <p class="text-white text-opacity-80">+91 98765 43210</p>
+                                <p class="text-white text-opacity-80">+91 87654 32109</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <p class="text-white text-opacity-80">Mumbai, Maharashtra, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white border-opacity-20 mt-12 pt-8 text-center">
+                <p class="text-white text-opacity-80">
+                    © 2025 Incense Portfolio. All Rights Reserved. | Trusted supplier of premium incense raw materials worldwide.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu functionality
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Category tabs functionality
+        document.querySelectorAll('.category-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                // Remove active class from all tabs
+                document.querySelectorAll('.category-tab').forEach(t => {
+                    t.classList.remove('active', 'bg-primary', 'text-white');
+                    t.classList.add('bg-surface', 'text-text-secondary');
+                });
+                
+                // Add active class to clicked tab
+                this.classList.add('active', 'bg-primary', 'text-white');
+                this.classList.remove('bg-surface', 'text-text-secondary');
+                
+                // Filter products
+                const category = this.dataset.category;
+                filterProducts(category);
+            });
+        });
+
+        // Product filtering function
+        function filterProducts(category) {
+            const products = document.querySelectorAll('.product-card');
+            let visibleCount = 0;
+            
+            products.forEach(product => {
+                if (category === 'all' || product.dataset.category === category) {
+                    product.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+            
+            // Update results counter
+            document.getElementById('results-counter').textContent = `Showing ${visibleCount} products`;
+        }
+
+        // Inquiry modal functionality
+        const inquiryModal = document.getElementById('inquiry-modal');
+        const inquiryProduct = document.getElementById('inquiry-product');
+        
+        document.querySelectorAll('.inquiry-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const productName = this.dataset.product;
+                inquiryProduct.value = productName;
+                inquiryModal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        document.getElementById('close-modal').addEventListener('click', closeModal);
+        document.getElementById('cancel-inquiry').addEventListener('click', closeModal);
+
+        function closeModal() {
+            inquiryModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        inquiryModal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Mobile filter sidebar
+        const mobileFilterBtn = document.getElementById('mobile-filter-btn');
+        const mobileFilterSidebar = document.getElementById('mobile-filter-sidebar');
+        const mobileFilterOverlay = document.getElementById('mobile-filter-overlay');
+        const closeMobileFilter = document.getElementById('close-mobile-filter');
+
+        mobileFilterBtn.addEventListener('click', function() {
+            mobileFilterSidebar.classList.remove('-translate-x-full');
+            mobileFilterOverlay.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeMobileFilter.addEventListener('click', closeMobileFilterSidebar);
+        mobileFilterOverlay.addEventListener('click', closeMobileFilterSidebar);
+
+        function closeMobileFilterSidebar() {
+            mobileFilterSidebar.classList.add('-translate-x-full');
+            mobileFilterOverlay.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Sort functionality
+        document.getElementById('sort-dropdown').addEventListener('change', function() {
+            const sortBy = this.value;
+            const productsGrid = document.getElementById('products-grid');
+            const products = Array.from(productsGrid.querySelectorAll('.product-card:not([style*="display: none"])'));
+            
+            products.sort((a, b) => {
+                switch(sortBy) {
+                    case 'alphabetical':
+                        return a.querySelector('h3').textContent.localeCompare(b.querySelector('h3').textContent);
+                    case 'price-low':
+                        return parseInt(a.dataset.price) - parseInt(b.dataset.price);
+                    case 'price-high':
+                        return parseInt(b.dataset.price) - parseInt(a.dataset.price);
+                    case 'category':
+                        return a.dataset.category.localeCompare(b.dataset.category);
+                    default:
+                        return 0;
+                }
+            });
+            
+            // Re-append sorted products
+            products.forEach(product => {
+                productsGrid.appendChild(product);
+            });
+        });
+
+        // Form submission
+        document.getElementById('inquiry-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will contact you within 24 hours.');
+            closeModal();
+        });
+
+        // Reset filters
+        document.getElementById('reset-filters').addEventListener('click', function() {
+            // Reset all checkboxes
+            document.querySelectorAll('.category-filter, .material-filter').forEach(checkbox => {
+                checkbox.checked = false;
+            });
+            document.querySelector('.category-filter[value="all"]').checked = true;
+            
+            // Reset price range
+            document.getElementById('price-min').value = '';
+            document.getElementById('price-max').value = '';
+            document.getElementById('price-range').value = 500;
+            
+            // Show all products
+            filterProducts('all');
+        });
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set initial results counter
+            const totalProducts = document.querySelectorAll('.product-card').length;
+            document.getElementById('results-counter').textContent = `Showing ${totalProducts} products`;
+        });
+    </script>
+</body>
+</html>

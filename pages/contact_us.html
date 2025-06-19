@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Incense Portfolio | Premium Raw Materials & OEM Services</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Contact Incense Portfolio for premium raw materials, OEM packaging services, and wholesale inquiries. Professional B2B communication for incense suppliers worldwide." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fincensepo8853back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.5"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation Header -->
+    <header class="bg-surface shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="../assets/images/Aromya-1750354527295.png" alt="AROMYA Logo" class="w-10 h-10 object-contain" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                    <div class="hidden items-center justify-center w-10 h-10 bg-primary text-white rounded" style="display: none;">
+                        <span class="text-lg font-bold">A</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-serif font-bold text-primary">AROMYA</h1>
+                        <p class="text-xs text-text-secondary">Premium Raw Materials</p>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth">Home</a>
+                    <a href="products_catalog.html" class="text-text-secondary hover:text-primary transition-smooth">Products</a>
+                    <a href="oem_packaging_services.html" class="text-text-secondary hover:text-primary transition-smooth">OEM Packaging</a>
+                    <a href="contact_us.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Contact Us</a>
+                </div>
+
+                <!-- Currency/Language Selector -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <select class="text-sm border border-primary border-opacity-20 rounded px-2 py-1 bg-background">
+                        <option>USD ($)</option>
+                        <option>INR (₹)</option>
+                        <option>EUR (€)</option>
+                    </select>
+                    <select class="text-sm border border-primary border-opacity-20 rounded px-2 py-1 bg-background">
+                        <option>EN</option>
+                        <option>HI</option>
+                    </select>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden mt-4 pb-4 border-t border-primary border-opacity-20 hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="homepage.html" class="text-text-secondary">Home</a>
+                    <a href="products_catalog.html" class="text-text-secondary">Products</a>
+                    <a href="oem_packaging_services.html" class="text-text-secondary">OEM Packaging</a>
+                    <a href="contact_us.html" class="text-primary font-semibold">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="bg-surface py-4 px-6">
+        <div class="max-w-7xl mx-auto">
+            <nav class="flex items-center space-x-2 text-sm">
+                <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth">Home</a>
+                <svg class="w-4 h-4 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                <span class="text-primary font-semibold">Contact Us</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="py-16 px-6 bg-primary text-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold mb-6 animate-fade-in">Get In Touch</h1>
+            <p class="text-xl text-white text-opacity-90 max-w-3xl mx-auto animate-slide-up">
+                Ready to partner with us? Contact our team for premium incense raw materials, custom OEM packaging solutions, and wholesale opportunities worldwide.
+            </p>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="py-20 px-6 bg-background">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Contact Form - Left Column (7 cols) -->
+                <div class="lg:col-span-7">
+                    <div class="card p-8">
+                        <h2 class="text-3xl font-serif font-bold text-primary mb-6">Send Us a Message</h2>
+                        <p class="text-text-secondary mb-8">
+                            Fill out the form below and our team will get back to you within 24 hours for all business inquiries.
+                        </p>
+
+                        <form id="contact-form" class="space-y-6">
+                            <!-- Name and Email Row -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-semibold text-primary mb-2">Full Name *</label>
+                                    <input type="text" id="name" name="name" required class="input-field" placeholder="Enter your full name" />
+                                    <span class="error-message text-error text-sm hidden">Please enter your full name</span>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-semibold text-primary mb-2">Email Address *</label>
+                                    <input type="email" id="email" name="email" required class="input-field" placeholder="your.email@company.com" />
+                                    <span class="error-message text-error text-sm hidden">Please enter a valid email address</span>
+                                </div>
+                            </div>
+
+                            <!-- Company and Phone Row -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="company" class="block text-sm font-semibold text-primary mb-2">Company Name</label>
+                                    <input type="text" id="company" name="company" class="input-field" placeholder="Your company name" />
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-semibold text-primary mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="input-field" placeholder="+1 (555) 123-4567" />
+                                </div>
+                            </div>
+
+                            <!-- Subject Dropdown -->
+                            <div>
+                                <label for="subject" class="block text-sm font-semibold text-primary mb-2">Subject *</label>
+                                <select id="subject" name="subject" required class="input-field">
+                                    <option value>Select inquiry type</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="product">Product Information</option>
+                                    <option value="oem">OEM Services</option>
+                                    <option value="partnership">Partnership Opportunities</option>
+                                </select>
+                                <span class="error-message text-error text-sm hidden">Please select a subject</span>
+                            </div>
+
+                            <!-- Message Textarea -->
+                            <div>
+                                <label for="message" class="block text-sm font-semibold text-primary mb-2">Message *</label>
+                                <textarea id="message" name="message" rows="6" required class="input-field resize-none" placeholder="Please provide details about your inquiry, including quantity requirements, preferred products, and any specific questions..."></textarea>
+                                <span class="error-message text-error text-sm hidden">Please enter your message</span>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="flex items-center justify-between">
+                                <button type="submit" class="btn-accent px-8 py-3 inline-flex items-center space-x-2">
+                                    <span>Send Message</span>
+                                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                                    </svg>
+                                </button>
+                                <p class="text-sm text-text-secondary">* Required fields</p>
+                            </div>
+                        </form>
+
+                        <!-- Success Message -->
+                        <div id="success-message" class="hidden mt-6 p-4 bg-success bg-opacity-10 border border-success border-opacity-20 rounded">
+                            <div class="flex items-center space-x-3">
+                                <svg class="w-6 h-6 text-success flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                </svg>
+                                <div>
+                                    <h4 class="font-semibold text-success">Message Sent Successfully!</h4>
+                                    <p class="text-success text-opacity-80">Thank you for your inquiry. Our team will respond within 24 hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information - Right Column (5 cols) -->
+                <div class="lg:col-span-5">
+                    <div class="space-y-8">
+                        <!-- Company Contact Info -->
+                        <div class="card p-6">
+                            <h3 class="text-2xl font-serif font-bold text-primary mb-6">Contact Information</h3>
+                            
+                            <div class="space-y-6">
+                                <!-- Email -->
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-1">Email Address</h4>
+                                        <p class="text-text-secondary">info@incenseportfolio.com</p>
+                                        <p class="text-text-secondary">sales@incenseportfolio.com</p>
+                                    </div>
+                                </div>
+
+                                <!-- Phone -->
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-1">Phone Numbers</h4>
+                                        <p class="text-text-secondary">+91 98765 43210</p>
+                                        <p class="text-text-secondary">+91 87654 32109</p>
+                                    </div>
+                                </div>
+
+                                <!-- Business Hours -->
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-1">Business Hours</h4>
+                                        <p class="text-text-secondary">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                                        <p class="text-text-secondary">Saturday: 9:00 AM - 2:00 PM</p>
+                                        <p class="text-text-secondary">Sunday: Closed</p>
+                                    </div>
+                                </div>
+
+                                <!-- Address -->
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-12 h-12 bg-accent bg-opacity-10 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-primary mb-1">Office Address</h4>
+                                        <p class="text-text-secondary">123 Incense Trade Center</p>
+                                        <p class="text-text-secondary">Andheri East, Mumbai</p>
+                                        <p class="text-text-secondary">Maharashtra 400069, India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google Maps -->
+                        <div class="card overflow-hidden">
+                            <div class="h-64 bg-surface relative">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.11609823277!2d72.74109995!3d19.08219865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sus!4v1635789012345!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-full">
+                                </iframe>
+                                <div class="absolute inset-0 bg-primary bg-opacity-10 pointer-events-none"></div>
+                            </div>
+                            <div class="p-4">
+                                <div class="flex items-center justify-between">
+                                    <h4 class="font-semibold text-primary">Find Us on Map</h4>
+                                    <a href="https://maps.google.com/?q=Mumbai,Maharashtra,India" target="_blank" class="text-accent hover:text-accent-600 transition-smooth inline-flex items-center space-x-1">
+                                        <span class="text-sm">Get Directions</span>
+                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Contact Methods -->
+    <section class="py-16 px-6 bg-surface">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">More Ways to Connect</h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Choose your preferred method of communication for quick business inquiries and partnership discussions.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- WhatsApp Business -->
+                <div class="card p-6 text-center group hover:scale-105 transition-all duration-300">
+                    <div class="w-16 h-16 bg-success bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.309"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">WhatsApp Business</h3>
+                    <p class="text-text-secondary mb-4">Quick inquiries and instant communication for urgent business needs.</p>
+                    <a href="https://wa.me/919876543210" target="_blank" class="btn-success inline-flex items-center space-x-2">
+                        <span>Chat Now</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- LinkedIn Profile -->
+                <div class="card p-6 text-center group hover:scale-105 transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">LinkedIn Profile</h3>
+                    <p class="text-text-secondary mb-4">Connect professionally and explore partnership opportunities.</p>
+                    <a href="https://linkedin.com/company/incense-portfolio" target="_blank" class="btn-primary inline-flex items-center space-x-2">
+                        <span>Connect</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Company Brochure -->
+                <div class="card p-6 text-center group hover:scale-105 transition-all duration-300">
+                    <div class="w-16 h-16 bg-accent bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-primary mb-3">Company Brochure</h3>
+                    <p class="text-text-secondary mb-4">Download our detailed product catalog and company information.</p>
+                    <a href="#" class="btn-accent inline-flex items-center space-x-2" onclick="downloadBrochure()">
+                        <span>Download PDF</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <img src="../assets/images/Aromya-1750354527295.png" alt="AROMYA Logo" class="w-8 h-8 object-contain" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+                        <div class="hidden items-center justify-center w-8 h-8 bg-accent text-white rounded" style="display: none;">
+                            <span class="text-sm font-bold">A</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-serif font-bold">AROMYA</h3>
+                            <p class="text-sm text-white text-opacity-80">Premium Raw Materials</p>
+                        </div>
+                    </div>
+                    <p class="text-white text-opacity-80 leading-relaxed">
+                        Leading supplier of premium incense raw materials serving wholesale buyers and manufacturers worldwide with quality and reliability.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="homepage.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">Home</a></li>
+                        <li><a href="products_catalog.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">Products</a></li>
+                        <li><a href="oem_packaging_services.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">OEM Services</a></li>
+                        <li><a href="contact_us.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Our Products</h4>
+                    <ul class="space-y-3">
+                        <li><a href="product_category_detail.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">Raw Incense Sticks</a></li>
+                        <li><a href="product_category_detail.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">Raw Dhoop Sticks</a></li>
+                        <li><a href="product_category_detail.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">Raw Dhoop Cones</a></li>
+                        <li><a href="oem_packaging_services.html" class="text-white text-opacity-80 hover:text-accent transition-smooth">Custom Packaging</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Information</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                            </svg>
+                            <div>
+                                <p class="text-white text-opacity-80">info@incenseportfolio.com</p>
+                                <p class="text-white text-opacity-80">sales@incenseportfolio.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                            </svg>
+                            <div>
+                                <p class="text-white text-opacity-80">+91 98765 43210</p>
+                                <p class="text-white text-opacity-80">+91 87654 32109</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-5 h-5 text-accent mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                            </svg>
+                            <p class="text-white text-opacity-80">Mumbai, Maharashtra, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white border-opacity-20 mt-12 pt-8 text-center">
+                <p class="text-white text-opacity-80">
+                    © 2025 Incense Portfolio. All Rights Reserved. | Trusted supplier of premium incense raw materials worldwide.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form Validation and Submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Reset previous error states
+            const errorMessages = document.querySelectorAll('.error-message');
+            errorMessages.forEach(msg => msg.classList.add('hidden'));
+            
+            const inputs = document.querySelectorAll('.input-field');
+            inputs.forEach(input => input.classList.remove('border-error'));
+            
+            let isValid = true;
+            
+            // Validate required fields
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const subject = document.getElementById('subject');
+            const message = document.getElementById('message');
+            
+            if (!name.value.trim()) {
+                showError(name, 'Please enter your full name');
+                isValid = false;
+            }
+            
+            if (!email.value.trim()) {
+                showError(email, 'Please enter your email address');
+                isValid = false;
+            } else if (!isValidEmail(email.value)) {
+                showError(email, 'Please enter a valid email address');
+                isValid = false;
+            }
+            
+            if (!subject.value) {
+                showError(subject, 'Please select a subject');
+                isValid = false;
+            }
+            
+            if (!message.value.trim()) {
+                showError(message, 'Please enter your message');
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // Simulate form submission
+                setTimeout(() => {
+                    document.getElementById('contact-form').classList.add('hidden');
+                    document.getElementById('success-message').classList.remove('hidden');
+                    
+                    // Reset form after 5 seconds
+                    setTimeout(() => {
+                        document.getElementById('contact-form').reset();
+                        document.getElementById('contact-form').classList.remove('hidden');
+                        document.getElementById('success-message').classList.add('hidden');
+                    }, 5000);
+                }, 1000);
+            }
+        });
+        
+        function showError(input, message) {
+            input.classList.add('border-error');
+            const errorMsg = input.parentNode.querySelector('.error-message');
+            if (errorMsg) {
+                errorMsg.textContent = message;
+                errorMsg.classList.remove('hidden');
+            }
+        }
+        
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+        
+        // Download Brochure Function
+        function downloadBrochure() {
+            // Simulate PDF download
+            const link = document.createElement('a');
+            link.href = '#'; // In real implementation, this would be the actual PDF URL
+            link.download = 'Incense-Portfolio-Brochure.pdf';
+            link.click();
+            
+            // Show download notification
+            alert('Thank you for your interest! The brochure download will begin shortly.');
+        }
+        
+        // Real-time form validation
+        document.getElementById('email').addEventListener('blur', function() {
+            if (this.value && !isValidEmail(this.value)) {
+                showError(this, 'Please enter a valid email address');
+            }
+        });
+        
+        document.getElementById('email').addEventListener('input', function() {
+            if (this.classList.contains('border-error') && isValidEmail(this.value)) {
+                this.classList.remove('border-error');
+                const errorMsg = this.parentNode.querySelector('.error-message');
+                if (errorMsg) {
+                    errorMsg.classList.add('hidden');
+                }
+            }
+        });
+        
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-slide-up');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
